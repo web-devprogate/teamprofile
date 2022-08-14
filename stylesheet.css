@@ -1,3 +1,7 @@
+body {
+  background-image: url('img/bgweb.jpg');
+  background-size: auto;
+}
 section {
   display: flex;
   justify-content: center;
@@ -115,8 +119,8 @@ h3 {
 footer h1 {
   text-align: center;
   margin-top: -40px;
-  background-color: #0099ff;
-  color: white;
+  background-color: rgb(180, 179, 179);
+  color: rgb(0, 0, 0);
   padding-bottom: 20px;
   height: 40px;
 }
