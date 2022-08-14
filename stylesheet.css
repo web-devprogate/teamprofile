@@ -1,1 +1,42 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon i {
+  padding: 5px 5px;
+}
+
+.profile1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile1 img {
+  width: 200px;
+  height: 200px;
+}
+
+.profile1 h1 {
+  text-align: center;
+}
+
+.profile1 h2 {
+  text-align: center;
+}
 
