@@ -40,3 +40,54 @@
   text-align: center;
 }
 
+/* profile 4 */
+.card {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.profile4 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.profile4 .shadow {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 45%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.profile4 .profil-alfi, .keterangan-alfi {
+    height: 270px;
+}
+
+.profile4 h1, h2, h3 {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* bagian footer */
+footer h1 {
+    text-align: center;
+    margin-top: -40px;
+    background-color: #0099ff;
+    color: white;
+    padding-bottom: 20px;
+    height: 40px;
+}
