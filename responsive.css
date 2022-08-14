@@ -1,1 +1,189 @@
+@media (max-width: 680px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      header {
+        height: 70px;
+        width: 100%;
+        background-color: #0099ff;
+        text-align: center;
+        position: fixed;
+        z-index: 10;
+      }
+      
+      .header-logo a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        line-height: 70px;
+      }
+      
+      section {
+        padding-top: 100px;
+        justify-content: none;
+        align-items: none;
+        margin-bottom: 50px;
+      }
+      
+      .wrapper {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(161, 161, 161, 0.603);
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+
+      .photo {
+        width: 100%;
+        flex: auto;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: #dddddd;
+        border: 3px solid rgb(70, 70, 70);
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      
+      .photo img {
+        width: 55%;
+        border: 3px solid rgb(70, 70, 70);
+        border-radius: 50%;
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+        box-sizing: border-box;
+      }
+      
+      .icon {
+        display: block;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      
+      .icon i {
+        flex: none;
+        font-size: 35px;
+        padding: 0px 10px 10px 10px;
+        color: rgb(70, 70, 70);
+      }
+      
+      .photo img:hover {
+        transform: scale(1.2);
+      }
+      
+      .icon i:hover {
+        transform: scale(1.5);
+      }
+
+      /* profile1 */
+      .profile1 {
+        width: 100%;
+        height: auto;
+        justify-content: left;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+      
+      .profile1 img {
+        width: 100%;
+        height: auto;
+        border: 3px solid rgb(117, 117, 117);
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      
+      .profile1 h1 {
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: left;
+      }
+      
+      .profile1 h2 {
+        margin: 10px 0px 0px 0px;
+      }
+
+      .profile1 h3 {
+        margin: 10px 0px 0px 0px;
+      }
+      
+      .profile1 h1 h2 h3 {
+        text-align: left;
+      }
+      
+
+      /* profile 4 */
+      .card {
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px auto;
+        width: 100%;
+        border-radius: 10px;
+        overflow: auto;
+        background-color: rgba(180, 179, 179, 0.603);
+      }
+      
+      .profile4 {
+        display: flex;
+      }
+      
+      .profile4 img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+      }
+      
+      .profile4 .shadow {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 45%;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 20px;
+      }
+      
+      .profile4 .profil-alfi,
+      .keterangan-alfi {
+        height: 270px;
+      }
+      
+      .profile4 h1,
+      h2,
+      h3 {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+      }
+      
+      /* bagian footer */
+      footer h1 {
+        text-align: center;
+        margin-top: -40px;
+        background-color: #0099ff;
+        color: white;
+        padding-bottom: 20px;
+        height: 40px;
+      }
+      
+}
