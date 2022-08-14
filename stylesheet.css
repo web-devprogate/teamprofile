@@ -1,14 +1,23 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  background-color: rgba(180, 179, 179, 0.603);
+  width: 75%;
+  height: 450px;
 }
 
 .photo img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  padding: 20px 0;
 }
 
 .icon {
@@ -18,7 +27,17 @@
 
 .icon i {
   padding: 5px 5px;
+  color: black;
 }
+
+.photo img:hover {
+  transform: scale(1.2);
+}
+
+.icon i:hover {
+  transform: scale(1.5);
+}
+/* profile1 */
 
 .profile1 {
   display: flex;
@@ -32,62 +51,71 @@
   height: 200px;
 }
 
-.profile1 h1 {
+.profile1 h1 h2,
+h3 {
   text-align: center;
 }
 
 .profile1 h2 {
-  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
-
 /* profile 4 */
 .card {
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    border-radius: 10px;
-    overflow: auto;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 10px;
+  overflow: auto;
+  background-color: rgba(180, 179, 179, 0.603);
+}
+
+.profile4 {
+  display: flex;
 }
 
 .profile4 img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
 }
 
 .profile4 .shadow {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 45%;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 20px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 20px;
 }
 
-.profile4 .profil-alfi, .keterangan-alfi {
-    height: 270px;
+.profile4 .profil-alfi,
+.keterangan-alfi {
+  height: 270px;
 }
 
-.profile4 h1, h2, h3 {
-    margin: auto;
-    text-align: center;
-    width: 100%;
+.profile4 h1,
+h2,
+h3 {
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 /* bagian footer */
 footer h1 {
-    text-align: center;
-    margin-top: -40px;
-    background-color: #0099ff;
-    color: white;
-    padding-bottom: 20px;
-    height: 40px;
+  text-align: center;
+  margin-top: -40px;
+  background-color: #0099ff;
+  color: white;
+  padding-bottom: 20px;
+  height: 40px;
 }
