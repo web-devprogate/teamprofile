@@ -11,6 +11,7 @@ section {
   background-color: rgba(180, 179, 179, 0.603);
   width: 75%;
   height: 450px;
+  border-radius: 10px;
 }
 
 .photo img {
