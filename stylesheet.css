@@ -26,15 +26,26 @@ body {
 header {
   height: 80px;
   width: 100%;
-  background-color: #ffe1a8;
+  background-color: #DDDDDD;
   text-align: center;
   position: fixed;
   z-index: 10;
 }
 
+header img {
+  width: 50px;
+  padding: 10px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-logo a {
   text-decoration: none;
-  color: white;
+  color: #464646;
   font-size: 40px;
   line-height: 80px;
 }
@@ -61,7 +72,7 @@ svg {
 .main-title h2 {
   font-size: 25px;
   letter-spacing: 0px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .main-title span {
@@ -125,6 +136,10 @@ svg {
 }
 
 /* Content */
+.all-profile {
+  padding-top: 3rem;
+}
+
 .content-title {
   height: 50px;
   text-align: center;
@@ -163,6 +178,9 @@ svg {
   margin-right: 2%;
   box-sizing: border-box;
   flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-photo img{
