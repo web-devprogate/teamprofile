@@ -42,7 +42,7 @@ header {
 /* Main */
 section {
   background-color: rgba(255, 225, 168, 0.9);
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 8%;
   display: flex;
 }
@@ -56,7 +56,7 @@ section {
 .main-title h2 {
   font-size: 25px;
   letter-spacing: 0px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .main-title span {
@@ -70,7 +70,7 @@ section {
   height: auto;
   background-color: rgba(180, 179, 179, 0.603);
   border-radius: 50px;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   display: flex;
 }
@@ -120,6 +120,10 @@ section {
 }
 
 /* Content */
+.all-profile {
+  padding-top: 3rem;
+}
+
 .content-title {
   height: 50px;
   text-align: center;
@@ -139,6 +143,7 @@ section {
 
 .profile-left {
   width: 100%;
+  padding-top: 60px;
 }
 
 .profile-wrapper {
@@ -158,6 +163,9 @@ section {
   margin-right: 2%;
   box-sizing: border-box;
   flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-photo img{
