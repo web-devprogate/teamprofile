@@ -47,19 +47,22 @@
         font-size: 70px;
       }
       
-      .main-wrapper {
-        flex-wrap: wrap;
-      }
-      
       .photo {
         width: 25%;
+        flex-wrap: wrap;
       }
       
       .photo img {
         border-radius: 10%;
       }
       
+      .content-title {
+        margin-top: -30px;
+        margin-bottom: 170px;
+      }
+
       .profile-wrapper {
+        padding: 20px;
         flex-direction: column;
       }
       
@@ -70,10 +73,24 @@
       
       .profile-about {
         width: 100%;
+        margin-top: 10px;
+      }
+
+      .profile-about h2 {
+        margin-top: 5px;
+      }
+
+      .profile-desc {
+        padding: 20px;
+
       }
       
       .profile-desc p {
         font-size: 30px;
+      }
+
+      .card {
+        margin-top: 50px;
       }
       
       footer h1 {
@@ -81,7 +98,7 @@
       }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 680px) {
          
     
       .header-logo a {
@@ -104,12 +121,9 @@
         text-align: center;
       }
       
-      .main-wrapper {
-        flex-direction: column;
-      }
-      
       .photo {
         width: 94%;
+        flex-direction: column;
       }
       
       .photo img {
@@ -117,13 +131,14 @@
       }
       
       .content-title {
-        margin-top: 70px;
+        margin-top: 10px;
         margin-bottom: 100px;
       }
       
       .content-title h2 {
         font-size: 30px;
       }
+      
       
       .profile-wrapper {
         padding: 6%;
