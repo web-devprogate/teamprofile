@@ -19,8 +19,12 @@
       }
 
       .icon i {
-        font-size: 35px;
-        padding: 0px 5px 10px 5px;
+        font-size: 30px;
+        padding: 0px 3px;
+      }
+
+      .icon i:hover {
+        transform: none;
       }
 
       .profile-about h1 {
@@ -33,7 +37,7 @@
       
       .profile-desc p {
         font-size: 20px;
-        line-height: 40px;
+        line-height: 30px;
       }
       
       footer h1 {
@@ -41,24 +45,58 @@
       }
 }
 
+@media (max-width: 1024px) {
+  .main-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #c5ac7d;
+    border-radius: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  
+  .photo {
+    width: 20%;
+    text-align: center;
+    background-color: #d4d4d4;
+    border: 5px solid rgb(70, 70, 70);
+    border-radius: 34px;
+    margin: 20px;
+    box-sizing: border-box;
+    flex: auto;
+  }
+
+  .wave-bottom {
+    margin-top: 50px;
+    margin-bottom: -10px;
+  }
+  
+  footer h1 {
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
+  
+}
+
 @media (max-width: 1000px) {
       
       .main-title {
-        font-size: 70px;
+        font-size: 50px;
       }
       
       .photo {
         width: 25%;
         flex-wrap: wrap;
       }
-      
-      .photo img {
-        border-radius: 10%;
+
+      .photo:hover {
+        transform: none;
       }
       
       .content-title {
         margin-top: -30px;
-        margin-bottom: 170px;
+        margin-bottom: 80px;
       }
 
       .profile-wrapper {
@@ -87,30 +125,56 @@
       
       .profile-desc p {
         font-size: 30px;
+        text-align: left;
       }
 
       .card {
         margin-top: 50px;
       }
+
+      .aria .profile-photo, .alfi .profile-photo {
+        margin-left: 0px;
+      }
+      
+      .aria .profile-about, .alfi .profile-about {
+        text-align: left;
+      }
+
+      .wave-bottom {
+        margin-top: 50px;
+        margin-bottom: -10px;
+      }
       
       footer h1 {
-        font-size: 30px;
+        font-size: 25px;
+        padding-bottom: 30px;
       }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 780px) {
+  .photo {
+    width: 30%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
          
     
       .header-logo a {
-        font-size: 30px;
+        font-size: 25px;
+      }
+
+      header img {
+        width: 30px;
       }
     
       section {
-        padding-top: 160x;
+        padding-top: 120px;
       }
     
       .main-title {
-        font-size: 20px;
+        font-size: 25px;
         line-height: 50px;
         letter-spacing: 5px;
         margin-bottom: 20px;
@@ -119,6 +183,11 @@
       .main-title h2 {
         font-size: 15px;
         text-align: center;
+      }
+
+      .main-wrapper {
+        width: 100%;
+        margin: 0 auto;
       }
       
       .photo {
@@ -132,7 +201,11 @@
       
       .content-title {
         margin-top: 10px;
-        margin-bottom: 100px;
+        margin-bottom: 15px;
+      }
+
+      .profile-about h1 {
+        font-size: 10px;
       }
       
       .content-title h2 {
@@ -162,7 +235,7 @@
       
       .profile-about h2 {
         font-size: 12px;
-        margin-top: 5%;
+        margin-top: 2%;
         margin-bottom: 5%;
       }
       
@@ -181,4 +254,23 @@
         font-size: 20px;
       }
     
+}
+
+@media (max-width: 375px), (max-width: 390px), (max-width: 393px), (max-width: 412px), (max-width: 418px), (max-width: 450px) {
+  .header-logo a {
+    font-size: 20px;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .main-title h2 {
+    font-size: 12px;
+  }
+
+  .profile-about h1 {
+    font-size: 18px;
+    letter-spacing: 5px
+  }
 }

@@ -10,8 +10,8 @@ html {
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  color: rgb(70, 70, 70);;
-  background-image: url("img/old-tech-background.jpg");
+  color: #464646;
+  background-image: url(img/old-tech-background.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -24,10 +24,11 @@ body {
 
 /* Header */
 header {
-  height: 80px;
   width: 100%;
-  background-color: #DDDDDD;
+  height: 80px;
   text-align: center;
+  background-color: #d8bc89;
+  border-bottom: 3px solid #464646;
   position: fixed;
   z-index: 10;
 }
@@ -45,21 +46,23 @@ header img {
 
 .header-logo a {
   text-decoration: none;
-  color: #464646;
   font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
   line-height: 80px;
+  color: #464646;
 }
 
 /* Main */
 section {
-  background-color: rgb(255, 225, 168);
+  background-color: #f5d7a0;
   padding-top: 150px;
   padding-bottom: 5%;
   margin: 0 auto;
   display: flex;
 }
 
-svg {
+.wave-top {
   margin-top: -1px;
 }
 
@@ -84,9 +87,9 @@ svg {
 .main-wrapper {
   width: 100%;
   height: auto;
-  background-color: rgba(180, 179, 179, 0.603);
+  background-color: #c5ac7d;
   border-radius: 50px;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
 }
@@ -94,45 +97,52 @@ svg {
 .photo {
   width: 100%;
   text-align: center;
-  background-color: #dddddd;
+  background-color: #d4d4d4;
   border: 5px solid rgb(70, 70, 70);
   border-radius: 34px;
-  margin: 10px;
+  margin: 20px;
   box-sizing: border-box;
   flex: auto;
 }
 
-.photo img {
-  width: 200px;
-  height: 200px;
-  border: 5px solid rgb(70, 70, 70);
-  border-radius: 100%;
-  padding: 0px;
-  margin: 35px 0px 20px 0px;
-  box-sizing: border-box;
+.photo:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
 }
 
-.photo img:hover {
-  transition: all 0.5s;
+.photo p {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.photo img {
+  width: 80%;
+  height: 60%;
+  border: 5px solid rgb(70, 70, 70);
   border-radius: 10%;
+  box-sizing: border-box;
 }
 
 .icon {
   justify-content: center;
-  margin-top: 0;
-  margin-bottom: 10px;
   display: block;
+  margin: 10px 0px 15px 0px;
 }
 
 .icon i {
-  font-size: 45px;
+  font-size: 35px;
   color: rgb(70, 70, 70);
-  padding: 0px 10px 10px 10px;
+  padding: 5px;
+  margin: 0px 3px;
 }
 
 .icon i:hover {
   transition: all 0.5s;
   transform: scale(1.2);
+  color: #d4d4d4;
+  background-color: #464646;
+  border-radius: 10%;
 }
 
 /* Content */
@@ -144,27 +154,27 @@ svg {
   height: 50px;
   text-align: center;
   margin-top: -85px;
-  margin-bottom: 160px;
+  margin-bottom: 70px;
 }
 
 .content-title h2 {
   font-size: 50px;
-  color: wheat;
   padding: 20px;
-  background-color: rgba(58, 58, 58,0.8);
+  background-color: rgb(255, 225, 168, 0.9);
   border: 5px solid rgb(70, 70, 70);
+  border-radius: 20px;
   box-sizing: border-box;
   display: inline-block;
 }
 
-.profile-left {
+.profile {
   width: 100%;
 }
 
 .profile-wrapper {
   width: 100%;
   text-align: left;
-  background-color: rgba(221, 221, 221, 0.8);
+  background-color: rgb(212, 212, 212, 0.8);
   border: 5px solid rgb(70, 70, 70);
   border-radius: 10px;
   padding: 2%;
@@ -209,39 +219,55 @@ svg {
 }
 
 .profile-desc {
-  background-color: #dddddd;
+  text-align: justify;
+  background-color: rgb(212, 212, 212, 0.5);
   border: 5px solid rgb(70, 70, 70);
   border-radius: 10px;
   padding: 2%;
   box-sizing: border-box;
-  text-align: justify;
 }
 
 .profile-desc p {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 42px;
 }
 
 .card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: rgba(197, 172, 125, 0.8);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 70px 0px 0px 0px;
-  width: 100%;
   border-radius: 10px;
   overflow: auto;
-  background-color: rgba(158, 158, 158, 0.603);
   box-sizing: border-box;
 }
 
+/* Right Layout */
+.aria, .alfi {
+  flex-direction: row-reverse;
+}
+
+.aria .profile-photo, .alfi .profile-photo {
+  margin-right: 0px;
+  margin-left: 2%;
+}
+
+.aria .profile-about, .alfi .profile-about {
+  text-align: right;
+}
+
 /* Footer */
+.wave-bottom {
+  margin-bottom: -50px;
+}
+
 footer h1 {
-  font-size: 40px;
   height: auto;
+  font-size: 40px;
   text-align: center;
-  background-color: #ffe1a8;
+  background-color: #ddc18c;
   margin-top: -40px;
-  padding-bottom: 50px;
 }
